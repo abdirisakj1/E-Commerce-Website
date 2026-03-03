@@ -48,15 +48,5 @@ This project demonstrates including product listing, shopping cart functionality
 
 ---
 
-## 🎯 Learning Purpose
 
-This project helps practice:
-
-- DOM manipulation
-- Event handling
-- JavaScript arrays and objects
-- Local storage usage
-- Responsive website
-
----
 
