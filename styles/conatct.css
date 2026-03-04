@@ -393,13 +393,12 @@ h2 {
     width: 100%;
     padding: 1rem 1.5rem;
     font-size: 1rem;
-    border: 1px solid #cbd5e13a;
+    border: 1px solid #cbd5e1;
     border-radius: 60px;
 }
 
 .form-group textarea {
     border-radius: 30px;
-    resize: vertical;
     min-height: 140px;
 }
 
