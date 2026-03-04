@@ -11,34 +11,50 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+
 body.dark-mode {
-    background-color: #1e293b;
+    background: #1E293B;
     color: #e2e8f0;
 }
 
-body.dark-mode .bar{
+body.dark-mode .bar {
     color: #ffffff;
 }
-
+body.dark-mode .product-item{
+    background-color: #1E293B;
+    color: #ffffff;
+}
 body.dark-mode header {
     background-color: #0f172a;
     box-shadow: none;
+}
+body.dark-mode .product-title .desc{
+    color: #b9b9b9;
+}
+body.dark-mode .footer-section ul li a {
+    color: white;
 }
 
 body.dark-mode a {
     color: #ffffff;
 }
-body.dark-mode .footer-section ul li a {
+body.dark-mode .hero {
+    background-image: none;
+    background-color: #1E293B;
     color: white;
 }
-body.dark-mode .toggle-button span{
+body.dark-mode .toggle-button span {
     background: #fdfdfd;
 }
 
 
-body.dark-mode .navbar.active .nav-links a{
-    color:#000;
+body.dark-mode .navbar.active .nav-links a {
+    color: #000;
 }
+body.dark-mode .discount span{
+    color: #CBD5E1;
+}
+
 section {
     padding: 5rem 2rem;
 }
@@ -200,9 +216,7 @@ h2 {
 
 .total {
     padding: 1rem;
-    background: #f3f4f6;
     border-top: 1px solid #e5e7eb;
-    color: #000;
     text-align: center;
     margin-top: 3rem;
 }
@@ -231,7 +245,7 @@ h2 {
 
 /* CARD */
 .card {
-    border: 1px solid #e5e7eb;
+    border: 1px solid #e5e7eb3a;
     border-radius: 12px;
     padding: 1rem;
 
@@ -244,6 +258,7 @@ h2 {
 }
 
 .product-info img {
+    border-right: 1px dashed #e5e7eb9a;
     width: 160px;
     height: 160px;
     object-fit: cover;
@@ -253,7 +268,6 @@ h2 {
 .product-title h1 {
     font-size: 20px;
     margin-bottom: 0.5rem;
-    color: #111827;
 }
 
 .product-title .desc {
@@ -311,8 +325,6 @@ h2 {
 }
 
 .contact-hero {
-    /* background: #0f172a;
-    color: white; */
     text-align: center;
     padding: 3.5rem 1rem;
     margin-bottom: 1rem;
@@ -344,10 +356,9 @@ h2 {
 
 .contact-form,
 .contact-info {
-    background: white;
     border-radius: 36px;
     padding: 2.8rem 2.5rem;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #d1deed9a;
 }
 
 
@@ -356,7 +367,6 @@ h2 {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 2rem;
-    color: #0f172a;
     display: flex;
     align-items: center;
     gap: 0.8rem;
@@ -376,7 +386,6 @@ h2 {
     display: block;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #1e293b;
     font-size: 1rem;
 }
 
@@ -385,9 +394,8 @@ h2 {
     width: 100%;
     padding: 1rem 1.5rem;
     font-size: 1rem;
-    border: 1px solid #cbd5e1;
+    border: 1px solid #cbd5e13a;
     border-radius: 60px;
-    background: #f8fafc;
 }
 
 .form-group textarea {
@@ -440,11 +448,9 @@ h2 {
 .info-text h3 {
     font-size: 1.3rem;
     margin-bottom: 0.3rem;
-    color: #0f172a;
 }
 
 .info-text p {
-    color: #334155;
     font-size: 1.1rem;
 }
 
@@ -466,17 +472,16 @@ h2 {
 }
 
 .map-card {
-    background: white;
+    /* background: white; */
     border-radius: 48px;
     padding: 2.5rem;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #d1deed9a;
     text-align: center;
 }
 
 .map-card h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: #0f172a;
     display: flex;
     align-items: center;
     justify-content: center;

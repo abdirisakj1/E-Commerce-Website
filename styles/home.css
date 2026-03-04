@@ -13,19 +13,24 @@ body {
 }
 
 body.dark-mode {
-    background-color: #1e293b;
+    background: #1E293B;
     color: #e2e8f0;
 }
 
 body.dark-mode .bar {
     color: #ffffff;
 }
-
+body.dark-mode .product-item{
+    background-color: #1E293B;
+    color: #ffffff;
+}
 body.dark-mode header {
     background-color: #0f172a;
     box-shadow: none;
 }
-
+body.dark-mode .product-title .desc{
+    color: #b9b9b9;
+}
 body.dark-mode .footer-section ul li a {
     color: white;
 }
@@ -33,7 +38,11 @@ body.dark-mode .footer-section ul li a {
 body.dark-mode a {
     color: #ffffff;
 }
-
+body.dark-mode .hero {
+    background-image: none;
+    background-color: #1E293B;
+    color: white;
+}
 body.dark-mode .toggle-button span {
     background: #fdfdfd;
 }
@@ -41,6 +50,9 @@ body.dark-mode .toggle-button span {
 
 body.dark-mode .navbar.active .nav-links a {
     color: #000;
+}
+body.dark-mode .discount span{
+    color: #CBD5E1;
 }
 
 section {
@@ -162,7 +174,7 @@ h2 {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,9 +215,9 @@ h2 {
 
 .total {
     padding: 1rem;
-    background: #f3f4f6;
+    /* background: #f3f4f6; */
     border-top: 1px solid #e5e7eb;
-    color: #000;
+    /* color: #000; */
     text-align: center;
     margin-top: 3rem;
 }
@@ -215,8 +227,8 @@ h2 {
     position: absolute;
     top: -1;
     right: 0;
-    background: #111827;
-    color: #fff;
+     background: #111827;
+     color: #fff;  
     width: 35px;
     height: 35px;
     display: flex;
@@ -234,7 +246,7 @@ h2 {
 
 /* CARD */
 .card {
-    border: 1px solid #e5e7eb;
+        border: 1px solid #e5e7eb3a;
     border-radius: 12px;
     padding: 1rem;
 
@@ -247,6 +259,7 @@ h2 {
 }
 
 .product-info img {
+    border-right: 1px dashed #e5e7eb9a;
     width: 160px;
     height: 160px;
     object-fit: cover;
@@ -256,7 +269,6 @@ h2 {
 .product-title h1 {
     font-size: 20px;
     margin-bottom: 0.5rem;
-    color: #111827;
 }
 
 .product-title .desc {
@@ -349,7 +361,6 @@ h2 {
 
 
 .categories {
-    /* background: #f8fafc; */
     text-align: center;
     border: 1px solid #d2d2d2;
     border-radius: 13px;
@@ -370,7 +381,6 @@ h2 {
 }
 
 .category-box {
-    background: white;
     padding: 2rem 1.5rem;
     min-width: 170px;
     border-radius: 28px;
@@ -378,7 +388,6 @@ h2 {
     font-size: 1.3rem;
     box-shadow: 0 15px 30px -12px rgba(0, 0, 0, 0.1);
     border: 1px solid #e9eef2;
-    color: #1e293b;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -395,14 +404,13 @@ h2 {
 }
 
 .product-card {
-    background: white;
     padding: 1.2rem;
     display: flex;
     flex-direction: column;
     gap: 12px;
+    border: 1px solid #e5e7eb3a;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
 }
 
 
@@ -414,6 +422,8 @@ h2 {
     object-position: center;
     border-radius: 8px;
     position: relative;
+    opacity: 1;
+    border-bottom: 1px solid #cbd5e1;
 }
 
 .product-card .discount {
@@ -432,12 +442,11 @@ h2 {
 }
 
 .product-card h3 {
-    color: #1e293b;
     font-size: 1.5rem;
 }
 
 .product-card .desc {
-    color: #989494;
+    color: #949494;
 }
 
 .quantity-price {
@@ -453,7 +462,6 @@ h2 {
 
 .product-card button {
     margin-top: 0.5rem;
-    /* padding: 0.7rem 1.8rem; */
     border: none;
     background: #0f172a;
     color: white;
@@ -467,6 +475,7 @@ h2 {
 
 .product-card button:hover {
     background: #E60023;
+    color: white;
 }
 
 
@@ -520,11 +529,9 @@ h2 {
     max-width: 700px;
     margin: 1rem auto;
     font-size: 1.5rem;
-    background: white;
     padding: 1.8rem 2.5rem;
     border-radius: 40%;
     font-style: italic;
-    color: #1e293b;
 }
 
 .testimonials .customer i {
@@ -563,7 +570,7 @@ h2 {
     font-size: 1.1rem;
     border: 1px solid #cbd5e1;
     border-radius: 60px;
-    background: #f8fafc;
+    /* background: #f8fafc; */
 }
 
 .newsletter button {
@@ -584,8 +591,7 @@ h2 {
 
 
 .footer {
-    /* background: #111; */
-    /* color: #fff; */
+ 
     padding: 50px 20px 20px;
     font-family: Arial, sans-serif;
 }
